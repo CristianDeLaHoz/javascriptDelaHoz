@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equ iv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizador de pagos con tarjeta de crédito</title>
+   
+    <!--favicons-->
+    <link href="./multimedia/tarjeta-de-credito.png" rel="icon">
+
+    <!--fuente-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+      <!--hoja CSS-->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <script src="./js/main.js">
+        
+    </script>
+
+      <h1>Cotizador de pagos con tarjeta de crédito</h1>
+      <form>
+        <div>
+          <label for="amountToPay">Cantidad a pagar:</label>
+          <input type="number" id="amountToPay" name="amountToPay">
+        </div>
+        <div>
+          <label for="interestRate">Tasa de interés:</label>
+          <input type="number" id="interestRate" name="interestRate">
+        </div>
+        <div>
+          <label for="loanTerm">Número de meses para pagar:</label>
+          <input type="number" id="loanTerm" name="loanTerm">
+        </div>
+        <button type="button" onclick="calculatePayment()">Calcular pago mensual</button>
+      </form>
+      <p id="output">El pago mensual será:</p>
+      
+    </body>
+  </html>
+  
+
+
